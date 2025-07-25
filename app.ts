@@ -1,4 +1,4 @@
-import {createSpins} from "@flowplayer/spins"
+import {createSpins, events} from "@flowplayer/spins"
 
 const playlistID = "c30850bc-eeeb-421d-9ed3-158339d0851a"
 

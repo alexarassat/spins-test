@@ -10,6 +10,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "@flowplayer/spins": "^0.1.0-rc.11"
+    "@flowplayer/spins": "^0.1.0-rc.12"
   }
 }
