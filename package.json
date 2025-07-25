@@ -1,19 +1,15 @@
 {
   "name": "spins-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel index.html"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "^5.8.3",
-    "parcel": "^2.15.4"
+    "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "@flowplayer/spins": "^0.1.0-rc.10"
+    "@flowplayer/spins": "^0.1.0-rc.11"
   }
 }
