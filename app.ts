@@ -37,6 +37,7 @@ const spinItemArray = [
     }
 ]
 
+// createSpins
 const container = createSpins({
     //replace the playlistID with the spinItemArray in order to test the array
     playlist: playlistID,
@@ -44,4 +45,12 @@ const container = createSpins({
     plugins: ["subtitles"]
 })
 
+//listen for the spin_in_viewport event.
+container.on(events.SPIN_IN_VIEWPORT, (ev)=> {
+    const {config, spin, index} = ev.detail
+    console.log("spin_in_viewport_data: ", config, spin, index)
+    //add your code
+})
+
+//append the container into dom
 document.body.append(container)

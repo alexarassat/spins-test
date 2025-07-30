@@ -2,7 +2,8 @@
   "name": "spins-test",
   "version": "1.0.0",
   "scripts": {
-    "build": "parcel index.html"
+    "build": "parcel index-npm.html",
+    "build-cdn": "parcel index-cdn.html"
   },
   "keywords": [],
   "devDependencies": {

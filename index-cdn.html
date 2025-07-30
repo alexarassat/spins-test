@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spins-Test-cdn</title>
+    <style>
+    </style>
+</head>
+<body>
+<script type="module">
+    import {createSpins, events} from "https://player.wowza.com/spins/stable/index.js"
+
+    // createSpins
+    const container = createSpins({
+        //replace the playlistID with the spinItemArray in order to test the array
+        playlist: "c30850bc-eeeb-421d-9ed3-158339d0851a",
+        // This will exclude the rest of the available plugins, and will configure the player only with the subtitles plugin.
+        plugins: ["subtitles"]
+    })
+
+    //listen for the spin_in_viewport event.
+    container.on(events.SPIN_IN_VIEWPORT, (ev)=> {
+        const {config, spin, index} = ev.detail
+        console.log("spin_in_viewport_data: ", config, spin, index)
+        //add your code
+    })
+
+    //append the container into dom
+    document.body.append(container)
+</script>
+</body>
+</html>
