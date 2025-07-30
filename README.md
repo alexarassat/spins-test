@@ -14,8 +14,7 @@ Follow the steps below to clone the repository, install dependencies, and build 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/spins-test.git
-   cd spins-test
+   git https://github.com/alexarassat/spins-test.git
    ```
 
 2. **Install dependencies:**
@@ -26,13 +25,13 @@ Follow the steps below to clone the repository, install dependencies, and build 
 
 ### 🔧 Build Options
 
-- **Build for npm package testing:**
+- **Test the npm package:**
 
   ```bash
   npm run build
   ```
 
-- **Build for CDN testing:**
+- **Test CDN:**
 
   ```bash
   npm run build-cdn
